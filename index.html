@@ -1,0 +1,379 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Sebastian Muskalla">
+    <title>Showcase for Zahnrad</title>
+
+    <link href="dependencies/normalize.css" rel="stylesheet">
+    <link href="dependencies/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#main-navbar">
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="github"  viewBox="0 0 496 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+        </symbol>
+
+        <symbol id="linkedin"  viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+        </symbol>
+
+        <symbol id="link"  viewBox="0 0 640 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"/>
+        </symbol>
+    </svg>
+
+    <main>
+
+    <div id="main-navbar">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top" aria-label="Navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#zahnrad">Showcase for &#8220;Zahnrad&#8221;</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar-links" aria-controls="main-navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-md-end" id="main-navbar-links">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#zahnrad">Zahnrad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#author">About the author</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#code">About the code</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#user">User experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#admin">Admin experience</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div id="zahnrad" class="container col-xxl-8 px-4 py-5 mt-5">
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3">Zahnrad</h1>
+                <p class="lead">
+                    <strong>Zahnrad</strong> is a tool for automatically and optimally assigning students to exercises classes.
+                    Users can use a web interface to select their preferences for the available time slots.
+                    The tool will try to respect these preferences when creating the assignment.
+                </p>
+                <p class="lead">
+                    Zahnrad is implemented and deployed using various technologies including Java, Gradle, Spring, Thymeleaf, SQL and Docker.
+                </p>
+                <p class="lead">
+                    Zahnrad was succesfully used at the
+                    <a href="https://www.tcs.cs.tu-bs.de/">Institute for Theoretical Computer Science</a>
+                    at
+                    <a href="https://www.tu-braunschweig.de/">TU Braunschweig</a>
+                    in 2019.
+                </p>
+                <p class="lead">
+                    This page is a showcase for Zahnrad, presenting its features and providing some information about the implementation.
+                    Note that Zahnrad itself is proprietary closed-source software and not publicly available.
+                </p>
+            </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div id="author" class="container col-xxl-8 px-4 py-5">
+        <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-5">About the author</h1>
+            <h2 class="mb-4">Sebastian Muskalla</h2>
+            <p class="lead">
+                I wrote Zahnrad while being an employee and PhD student at the Institute for Theoretical Computer Science.
+                In additional to my research, I was responsible for organizing the exercises classes for various lectures.
+            </p>
+            <p class="lead">
+                On the one hand, Zahnrad allowed us to improve the quality of teaching.
+                It made organizing the exercises classes easier and more comfortable both for us and for the students.
+                On the other hand, coding Zahnrad was a welcome change from my mostly theoretical research and gave me an opportunity to hone my programming skills.
+            </p>
+            <div class="mb-2">&nbsp;</div>
+            <div class="list-group">
+                <a href="https://muskalla.saarland" class="list-group-item list-group-item-action">
+                    <svg class="bi" width="24" height="24">
+                        <use xlink:href="#link"/>
+                    </svg>
+                    &nbsp;
+                  My personal webpage: muskalla.saarland
+                </a>
+                <a href="https://github.com/SebastianMuskalla" class="list-group-item list-group-item-action">
+                    <svg class="bi" width="24" height="24">
+                        <use xlink:href="#github"/>
+                    </svg>
+                    &nbsp;
+                    Sebastian Muskalla @ GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/muskalla/" class="list-group-item list-group-item-action">
+                    <svg class="bi" width="24" height="24">
+                        <use xlink:href="#linkedin"/>
+                    </svg>
+                    &nbsp;
+                    Sebastian Muskalla @ LinkedIn
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+
+    <div id="code" class="container col-xxl-8 px-4 py-5">
+        <h1 class="display-5 fw-bold lh-1 mb-3">About the code</h1>
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <a href="screenshots/structure.png" class="fullscreen-lightbox">
+                    <img src="screenshots/structure.png" class="d-block mx-lg-auto img-fluid" alt="Project structure" width="700" height="500" loading="lazy">
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <p class="lead">
+                    Zahnrad is written in <em>Java</em> and uses <em>Gradle</em> as a build system and for dependency management.
+                    Zahnrad uses the <em>Spring framework</em> and its various components, e.g. it relies on <em>Spring Security</em> for the secure communication with an <em>LDAP server</em>.
+                </p>
+                <p class="lead">
+                    Zahnrad uses an <em>SQL server</em> to store its data. On the Java side of things, it uses the <em>Java Persistence API </em>and <em>JQL queries</em> to access this database.
+                </p>
+                <p class="lead">
+                    The frontend of Zahnrad uses <em>Thymeleaf</em> as a template engine.
+                </p>
+                <p class="lead">
+                    The optimal assignment is computed by solving an integer linear programming using the open-source tool <em>lpsolve</em>.
+                    To this end, Zahnrad contains a Java wrapper for lpsolve.
+                </p>
+                <p class="lead">
+                    Zahnrad is intended to be deployed in the form of a <em>Docker</em> container that hosts the webserver.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div id="user" class="container col-xxl-8 px-4 py-5">
+
+        <h1 class="display-5 fw-bold lh-1 mb-3">User experience</h1>
+
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <a href="screenshots/user_login.png" class="fullscreen-lightbox">
+                    <img src="screenshots/user_login.png" class="d-block mx-lg-auto img-fluid" alt="User login" width="700" height="500" loading="lazy">
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <h2>Login</h2>
+                <p class="lead">
+                    Zahnrad does not maintain the user login data.
+                    Instead, it uses Spring Security to establish a secure connection to an LDAP server provided by TU Braunschweig.
+                    After the first login, each user is asked to provide some additional information that cannot be retrieved from the LDAP server.
+                </p>
+            </div>
+        </div>
+
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <a href="screenshots/user_course_list.png" class="fullscreen-lightbox">
+                    <img src="screenshots/user_course_list.png" class="d-block mx-lg-auto img-fluid" alt="Course list" width="700" height="500" loading="lazy">
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <h2>Selecting a course</h2>
+                <p class="lead">
+                    After logging in, each user is presented the list of courses or lectures that are available in the current term.
+                    They may sign up for the exercises classes associated to each lecture.
+                </p>
+            </div>
+        </div>
+
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <a href="screenshots/user_preferences.png" class="fullscreen-lightbox">
+                    <img src="screenshots/user_preferences.png" class="d-block mx-lg-auto img-fluid" alt="Preferences" width="700" height="500" loading="lazy">
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <h2>Selecting preferences</h2>
+                <p class="lead">
+                    After signing up for a lecture, the user is presented with a list of dates for the weekly exercises classes.
+                    For each date, the user can select whether they prefer this date or whether they cannot participate at this date (e.g. because of a conflicting lecture).
+                </p>
+                <p class="lead">
+                    One should note that typically, the dates shown at this stage are a superset of the dates at which exercise classes will actually take place.
+                    This means that if a user tries to game the system by selecting "Impossible" for all but one date, this might end badly for them.
+                </p>
+            </div>
+        </div>
+
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <a href="screenshots/user_link.png" class="fullscreen-lightbox">
+                    <img src="screenshots/user_link.png" class="d-block mx-lg-auto img-fluid" alt="Links" width="700" height="500" loading="lazy">
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <h2>Linking users</h2>
+                <p class="lead">
+                    The exercise classes will usually assign homework to the students which has to be solved and submitted in groups of multiple people.
+                    In order to allow students to form a group with their friends, Zahnrad provides so-called links.
+                    To this end, a user may provide the student id number of another student.
+                    If this link is also established in the other direction (i.e. the other student provides the student id number of the first one),
+                    Zahnrad will try to assign the two students to the same date for the exercise classes.
+                </p>
+            </div>
+        </div>
+
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <a href="screenshots/user_assignment.png" class="fullscreen-lightbox">
+                    <img src="screenshots/user_assignment.png" class="d-block mx-lg-auto img-fluid" alt="Assignment" width="700" height="500" loading="lazy">
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <h2>Viewing the assignment</h2>
+                <p class="lead">
+                    Eventually, the administrator will close the signup process, create the optimized assignment, and then publish it.
+                    Afterwards, the user can see the exercise class they have been assigned to, i.e. the date, the room, and the teaching assistant that will hold the exercise classes.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <div id="admin" class="container col-xxl-8 px-4 py-5">
+
+        <h1 class="display-5 fw-bold lh-1 mb-3">Admin experience</h1>
+
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <a href="screenshots/admin_course_list.png" class="fullscreen-lightbox">
+                    <img src="screenshots/admin_course_list.png" class="d-block mx-lg-auto img-fluid" alt="Course list" width="700" height="500" loading="lazy">
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <h2>Creating courses</h2>
+                <p class="lead">
+                    Before the term starts, the admin may create the courses or lectures that will be available.
+                    Initially, these courses should be created as hidden, meaning that they will be only visible as administrators and not to the students.
+                    The admin should provide the course name, some additional information, and the amount of links that each user is allowed to have.
+                </p>
+            </div>
+        </div>
+
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <a href="screenshots/admin_slots.png" class="fullscreen-lightbox">
+                    <img src="screenshots/admin_slots.png" class="d-block mx-lg-auto img-fluid" alt="Slots" width="700" height="500" loading="lazy">
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <h2>Creating slots</h2>
+                <p class="lead">
+                    The admin cannot create a list of time slots that will be available.
+                    For each time slot, the date, the room, and the name of the teaching assistant can be provided.
+                    However, only the date will be shown to the students until the final assignment has been created and published.
+                </p>
+                <p class="lead">
+                    Afterwards, the course status can be set to "Open", meaning that the students can sign up for this course.
+                </p>
+            </div>
+        </div>
+
+            <div class="col-lg-6">
+                <h2>Automatic optimal assignment</h2>
+                <p class="lead">
+                    After the deadline for signing up has passed, the admin can close the signing up phase.
+                    Before starting the optimal assignment, a few parameters need to be set:
+                    The amount of students per exercise class and the number of exercise classes that will take place.
+                    If multiple exercise classes will take place in the same time slot, the admin may duplicate that time slot, which will also copy the students' preferences for that time slot.
+                </p>
+                <p class="lead">
+                    Afterwards, the automatic assignment can be started.
+                    Zahnrad will construct an integer linear program, call <em>lpsolve</em> in order to this optimization problem, and then import the solution.
+                </p>
+            </div>
+
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <a href="screenshots/admin_stats.png" class="fullscreen-lightbox">
+                    <img src="screenshots/admin_stats.png" class="d-block mx-lg-auto img-fluid" alt="Statistics" width="500" height="700" loading="lazy">
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <h2>Statistics</h2>
+                <p class="lead">
+                    The assignment that has been created is not yet visible to the students.
+                    It is recommended to check the statistics before publishing it.
+                </p>
+                <p class="lead">
+                    In the example in the picture, Zahnrad had to pick 4 out of the 5 timeslots and then assign students to them.
+                    We see that the optimizer has excluded the first timeslot which was preferred by only 10% of the students.
+                    When assigning the students, it managed to assign 75% of the students to a timeslot for which they had selected "Preferred".
+                    (The "Undefined" column corresponds to students that have signed up for the course, but who have failed to set their preferences.)
+                    Additionally, the automatic assignment respects all the links created by the users.
+                </p>
+                <p class="lead">
+                    Now, the assignment can be published, at which point it becomes visible to the students.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+            <div class="col-md-4 d-flex align-items-center">
+                <span class="mb-3 mb-md-0 text-muted">Copyright 2019-2022 Sebastian Muskalla; All rights reserved.</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3">
+                    <a class="text-muted" href="https://muskalla.saarland/">
+                        <svg class="bi" width="24" height="24">
+                            <use xlink:href="#link"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="https://github.com/SebastianMuskalla">
+                        <svg class="bi" width="24" height="24">
+                            <use xlink:href="#github"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="https://www.linkedin.com/in/muskalla/">
+                        <svg class="bi" width="24" height="24">
+                            <use xlink:href="#linkedin"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+    </main>
+
+    <script src="dependencies/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="dependencies/lightbox/index.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
